@@ -1,6 +1,13 @@
 import Navbar from "../components/Navbar";
 import speakersHero from "../assets/speakersHero.jpg";
-import { keystoneSpeakers, panelists } from "../data/speakerData";
+import {
+  keystoneSpeakers,
+  Innovation_Future_Possibilities_Panelists,
+  Innovation_Constraints_Panelists,
+  Academic_Workshop_Panelists,
+  Entrepreneurship_Workshop_Panelists,
+  BCI_competition_judges,
+} from "../data/speakerData";
 
 function Tag({ label }) {
   const base =
@@ -24,6 +31,13 @@ function Tag({ label }) {
 function SpeakerCard({ img, name, title, tags, variant = "panelist" }) {
   const isKeystone = variant === "keystone";
 
+  const initials = (name || "")
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase())
+    .join("");
+
   return (
     <div
       className={[
@@ -32,19 +46,24 @@ function SpeakerCard({ img, name, title, tags, variant = "panelist" }) {
       ].join(" ")}
     >
       <div className="h-[320px] w-full overflow-hidden bg-gray-100">
-        <img
-          src={img}
-          alt={name}
-          className="h-full w-full object-cover"
-          loading="lazy"
-        />
+        {img ? (
+          <img
+            src={img}
+            alt={name}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+        ) : (
+          <div className="h-full w-full flex items-center justify-center">
+            <div className="text-5xl font-bold text-black/30">{initials}</div>
+          </div>
+        )}
       </div>
 
-      <div className="px-4 py-4 h-[136px] bg-[#F5F6F7]">
+      {/* CHANGED: h-[136px] -> min-h-[136px] so tags never spill outside */}
+      <div className="px-4 py-4 min-h-[136px] bg-[#F5F6F7]">
         <div className="text-[26px] font-semibold text-black">{name}</div>
-        <div className="mt-1 text-[17px] leading-5 text-[#6B6B6B]">
-          {title}
-        </div>
+        <div className="mt-1 text-[17px] leading-5 text-[#6B6B6B]">{title}</div>
 
         {tags?.length ? (
           <div className="mt-4 flex flex-wrap gap-2">
@@ -75,9 +94,7 @@ export const Speakers = () => {
         <div className="absolute inset-0 flex items-center px-8">
           <div className="mx-auto w-full max-w-7xl mt-98">
             <div className="ml-auto max-w-md text-right">
-              <h1 className="text-[60px] font-bold text-white">
-                OUR SPEAKERS
-              </h1>
+              <h1 className="text-[60px] font-bold text-white">OUR SPEAKERS</h1>
               <p className="text-[20px] leading-5 text-white/85">
                 Explore the brilliant minds at CNTC, driving <br />
                 innovation in neurotechnology and <br />
@@ -113,19 +130,125 @@ export const Speakers = () => {
         </section>
       </div>
 
-      {/* PANELISTS */}
+      {/* INNOVATION: FUTURE POSSIBILITIES */}
       <div className="mx-auto w-full max-w-7xl mt-20">
         <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
           <div className="pt-8 md:-ml-16 ml-6">
             <h2 className="text-[50px] font-bold text-black">
-              PANELISTS
+              INNOVATION:
+              <br />
+              FUTURE
+              <br />
+              POSSIBILITIES
             </h2>
           </div>
 
           <div className="grid gap-y-10 md:gap-x-32 sm:gap-x-10 px-8 justify-center sm:grid-cols-2 lg:grid-cols-3">
-            {panelists.map((p) => (
+            {Innovation_Future_Possibilities_Panelists.map((p) => (
               <SpeakerCard
-                key={p.name + p.img}
+                key={p.name}
+                img={p.img}
+                name={p.name}
+                title={p.title}
+                tags={p.tags}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* INNOVATION: CONSTRAINTS */}
+      <div className="mx-auto w-full max-w-7xl mt-20">
+        <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
+          <div className="pt-8 md:-ml-16 ml-6">
+            <h2 className="text-[50px] font-bold text-black">
+              INNOVATION:
+              <br />
+              CONSTRAINTS
+            </h2>
+          </div>
+
+          <div className="grid gap-y-10 md:gap-x-32 sm:gap-x-10 px-8 justify-center sm:grid-cols-2 lg:grid-cols-3">
+            {Innovation_Constraints_Panelists.map((p) => (
+              <SpeakerCard
+                key={p.name}
+                img={p.img}
+                name={p.name}
+                title={p.title}
+                tags={p.tags}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* ACADEMIC WORKSHOP */}
+      <div className="mx-auto w-full max-w-7xl mt-20">
+        <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
+          <div className="pt-8 md:-ml-16 ml-6">
+            <h2 className="text-[50px] font-bold text-black">
+              ACADEMIC
+              <br />
+              WORKSHOP
+            </h2>
+          </div>
+
+          <div className="grid gap-y-10 md:gap-x-32 sm:gap-x-10 px-8 justify-center sm:grid-cols-2 lg:grid-cols-3">
+            {Academic_Workshop_Panelists.map((p) => (
+              <SpeakerCard
+                key={p.name}
+                img={p.img}
+                name={p.name}
+                title={p.title}
+                tags={p.tags}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* ENTREPRENEURSHIP WORKSHOP */}
+      <div className="mx-auto w-full max-w-7xl mt-20">
+        <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
+          <div className="pt-8 md:-ml-16 ml-6">
+            <h2 className="text-[50px] font-bold text-black">
+              INDUSTRY
+              <br />
+              WORKSHOP
+            </h2>
+          </div>
+
+          <div className="grid gap-y-10 md:gap-x-32 sm:gap-x-10 px-8 justify-center sm:grid-cols-2 lg:grid-cols-3">
+            {Entrepreneurship_Workshop_Panelists.map((p) => (
+              <SpeakerCard
+                key={p.name}
+                img={p.img}
+                name={p.name}
+                title={p.title}
+                tags={p.tags}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* BCI COMPETITION JUDGES */}
+      <div className="mx-auto w-full max-w-7xl mt-20">
+        <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
+          <div className="pt-8 md:-ml-16 ml-6">
+            <h2 className="text-[50px] font-bold text-black">
+              BCI
+              <br />
+              COMPETITION
+              <br />
+              JUDGES
+            </h2>
+          </div>
+
+          <div className="grid gap-y-10 md:gap-x-32 sm:gap-x-10 px-8 justify-center sm:grid-cols-2 lg:grid-cols-3">
+            {BCI_competition_judges.map((p) => (
+              <SpeakerCard
+                key={p.name}
                 img={p.img}
                 name={p.name}
                 title={p.title}
