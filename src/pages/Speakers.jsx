@@ -134,12 +134,10 @@ export const Speakers = () => {
       <div className="mx-auto w-full max-w-7xl mt-20">
         <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
           <div className="pt-8 md:-ml-16 ml-6">
-            <h2 className="text-[50px] font-bold text-black">
-              INNOVATION:
+            <h2 className="text-[40px] font-bold text-black">
+              NEUROENGINEER
               <br />
-              FUTURE
-              <br />
-              POSSIBILITIES
+              PANELISTS
             </h2>
           </div>
 
@@ -162,9 +160,9 @@ export const Speakers = () => {
         <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
           <div className="pt-8 md:-ml-16 ml-6">
             <h2 className="text-[50px] font-bold text-black">
-              INNOVATION:
+              NEUROETHIC
               <br />
-              CONSTRAINTS
+              PANELISTS
             </h2>
           </div>
 
@@ -211,8 +209,8 @@ export const Speakers = () => {
       <div className="mx-auto w-full max-w-7xl mt-20">
         <section className="grid items-start gap-12 md:grid-cols-[220px_1fr]">
           <div className="pt-8 md:-ml-16 ml-6">
-            <h2 className="text-[50px] font-bold text-black">
-              INDUSTRY
+            <h2 className="text-[42px] font-bold text-black">
+              ENTREPRENEUR
               <br />
               WORKSHOP
             </h2>
