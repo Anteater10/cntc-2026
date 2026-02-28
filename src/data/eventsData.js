@@ -74,8 +74,7 @@ export const schedule = [
   {
     time: "2:40 PM - 3:30 PM",
     sessions: [
-      { title: "Networking?", loc: "Chevron Auditorium" },
-      { title: "Networking?", loc: "Robert/Ida Room" },
+      { title: "Networking", loc: "Chevron Auditorium" },
     ],
   },
 
