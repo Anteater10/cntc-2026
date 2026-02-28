@@ -19,6 +19,48 @@ function Tag({ label }) {
     Industry: "bg-[#C1DDE2] text-[#005C6E]",
     Neuro: "bg-[#0055AF] text-[#B8E1F9]",
     "Keynote Speaker": "bg-[#FFE497] text-[#4A371D]",
+
+    // Innovation / Future Possibilities
+    "Precision neurology": "bg-[#D9F5E5] text-[#0F5A36]",
+    "Parkinson's care": "bg-[#E3F2FF] text-[#0A4A8A]",
+    "Cognitive neuroscience": "bg-[#EFE1FF] text-[#5A2D91]",
+    "ADHD therapy": "bg-[#FFE1EC] text-[#8A1F4D]",
+    "Focused ultrasound": "bg-[#DFF7F4] text-[#0C6B63]",
+    Neuromodulation: "bg-[#E8F0FF] text-[#1E4FA8]",
+    "Neural interfaces": "bg-[#E6ECFF] text-[#233F9A]",
+    Neurorehabilitation: "bg-[#EAF7E1] text-[#3C6F12]",
+
+    // Innovation / Constraints
+    Neuroethics: "bg-[#FFE8F3] text-[#7A1F4A]",
+    "Disability studies": "bg-[#F4F2E6] text-[#6A5A20]",
+    "Music/speech perception": "bg-[#E6F7FF] text-[#0E5C73]",
+    Bioethics: "bg-[#FDEED9] text-[#7A4300]",
+    "Moral psychology": "bg-[#EEE8FF] text-[#4A2F88]",
+
+    // Academic Workshop
+    "Human-AI interaction": "bg-[#E6F0FF] text-[#204FA3]",
+    Accessibility: "bg-[#E7F9EF] text-[#0C6B3F]",
+    "Human-centered AI": "bg-[#EAF3FF] text-[#1D4E89]",
+    Neuroscience: "bg-[#E8EDFF] text-[#2D3F91]",
+    Vision: "bg-[#FFF3D9] text-[#7A5A00]",
+
+    // Entrepreneurship Workshop
+    Entrepreneurship: "bg-[#FFE6CC] text-[#7A3D00]",
+    "Attention science": "bg-[#F0E6FF] text-[#5A2E91]",
+    Commercialization: "bg-[#DDF3FF] text-[#005C7A]",
+    "Go-to-market": "bg-[#E5FFF1] text-[#0B6B3A]",
+    Neurotech: "bg-[#E6EBFF] text-[#2A3E96]",
+    Product: "bg-[#FFF1E0] text-[#7A4A10]",
+    "Machine learning": "bg-[#E6F7FF] text-[#005E8A]",
+    EEG: "bg-[#E8F4FF] text-[#1F5D9A]",
+
+    // BCI competition
+    "Clinical neurotech": "bg-[#EAF5FF] text-[#0F4D8A]",
+    Epilepsy: "bg-[#FFE8E8] text-[#8A1F1F]",
+    BCI: "bg-[#E6EEFF] text-[#234C9A]",
+    Neuroengineering: "bg-[#E7F3FF] text-[#1A5A8A]",
+    "Motor control": "bg-[#EAF9E6] text-[#2F6B1A]",
+    "Deep learning": "bg-[#E6F0FF] text-[#1C4F9A]",
   };
 
   return (
@@ -42,7 +84,7 @@ function SpeakerCard({ img, name, title, tags, variant = "panelist" }) {
     <div
       className={[
         isKeystone ? "w-full max-w-[315px]" : "w-[315px]",
-        "bg-white ring-1 ring-black/10 shadow-[4px_4px_10px_rgba(0,0,0,0.25)]",
+        "bg-[#F5F6F7] ring-1 ring-black/10 shadow-[4px_4px_10px_rgba(0,0,0,0.25)]",
       ].join(" ")}
     >
       <div className="h-[320px] w-full overflow-hidden bg-gray-100">
@@ -61,7 +103,7 @@ function SpeakerCard({ img, name, title, tags, variant = "panelist" }) {
       </div>
 
       {/* CHANGED: h-[136px] -> min-h-[136px] so tags never spill outside */}
-      <div className="px-4 py-4 min-h-[136px] bg-[#F5F6F7]">
+      <div className="px-4 py-4 min-h-[136px]">
         <div className="text-[26px] font-semibold text-black">{name}</div>
         <div className="mt-1 text-[17px] leading-5 text-[#6B6B6B]">{title}</div>
 
