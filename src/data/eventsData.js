@@ -1,47 +1,59 @@
-
 export const schedule = [
   {
     time: "8:00 AM - 9:00 AM",
-    sessions: [{ title: "Check-in, Poster Set-up, Breakfast", loc: "Lobby, Robert/Ida Room" }],
-  },
-  {
-    time: "9:00 AM - 10:00 AM",
-    sessions: [{ title: "Opening + Keynote Speech by\nDaniel Almeido Filho", loc: "Chevron Auditorium" }],
-  },
-  {
-    time: "10:00 AM - 11:00 AM",
     sessions: [
-      { title: "Neurotech Possibility &\nApplication Panel", loc: "Chevron Auditorium" },
-      { title: "Academic Workshop", loc: "Robert/Ida Room" },
+      { title: "Check-in + Breakfast + Poster Set-up", loc: "Lobby / Robert-Ida Room" },
     ],
   },
   {
-    time: "11:00 AM - 12:00 PM",
-    sessions: [{ title: "Student Posters", loc: "Lobby" }],
-  },
-  {
-    time: "12:00 PM - 1:00 PM",
-    sessions: [{ title: "Lunch + Networking", loc: "Chevron Auditorium" }],
-  },
-  {
-    time: "1:00 PM - 2:00 PM",
+    time: "9:00 AM - 9:40 AM",
     sessions: [
-      { title: "Keynote Speech by Joseph Parvizi", loc: "Chevron Auditorium" },
+      { title: "Opening Keynote", loc: "Chevron Auditorium" },
     ],
   },
   {
-    time: "2:00 PM - 3:00 PM",
+    time: "10:00 AM - 10:40 AM",
     sessions: [
-      { title: "Neuroethics & AI Panel", loc: "Chevron Auditorium" },
-      { title: "Entrepreneurship Workshop", loc: "Robert/Ida Room" },
+      { title: "Panel Session", loc: "Chevron Auditorium" },
+      { title: "Workshop Session", loc: "Robert/Ida Room" },
     ],
   },
   {
-    time: "3:00 PM - 5:00 PM",
-    sessions: [{ title: "Brain Computer Interface\nCompetition", loc: "Chevron Auditorium" }],
+    time: "11:00 AM - 1:00 PM",
+    sessions: [
+      { title: "Lunch + Networking", loc: "Chevron Auditorium" },
+      { title: "Poster Session", loc: "Lobby" },
+    ],
   },
   {
-    time: "5:00 PM - 6:00 PM",
-    sessions: [{ title: "Closing Ceremony & Awards", loc: "Chevron Auditorium" }],
+    time: "1:00 PM - 1:40 PM",
+    sessions: [
+      { title: "Keynote", loc: "Chevron Auditorium" },
+    ],
+  },
+  {
+    time: "2:00 PM - 2:40 PM",
+    sessions: [
+      { title: "Panel Session", loc: "Chevron Auditorium" },
+      { title: "Workshop Session", loc: "Robert/Ida Room" },
+    ],
+  },
+  {
+    time: "2:40 PM - 3:30 PM",
+    sessions: [
+      { title: "Networking", loc: "Chevron Auditorium / Common Areas" },
+    ],
+  },
+  {
+    time: "3:30 PM - 5:30 PM",
+    sessions: [
+      { title: "BCI Competition", loc: "Chevron Auditorium" },
+    ],
+  },
+  {
+    time: "6:00 PM - 6:20 PM",
+    sessions: [
+      { title: "Closing", loc: "Chevron Auditorium" },
+    ],
   },
 ];
