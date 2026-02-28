@@ -2,19 +2,21 @@ import keystone1 from "../assets/speakers/speaker1.jpg";
 import keystone2 from "../assets/speakers/speaker2.jpg";
 
 // Panelist headshots (from /src/assets/Panelists)
-import brianPepin from "../assets/Panelists/Brian Pepin.jpeg";
-import gregSimpson from "../assets/Panelists/Greg Simpson.jpeg";
-import keithMurphy from "../assets/Panelists/Keith Murphy.jpeg";
-import preeyaKhanna from "../assets/Panelists/Preeya Khana.jpeg";
-import valerieBlack from "../assets/Panelists/Valerie Black.jpeg";
-import narayanSankaran from "../assets/Panelists/Narayan Sankaran.jpeg";
 import markFedyk from "../assets/Panelists/Mark Fedyk.jpeg";
-import gaojinHuang from "../assets/Panelists/Gaojin Huang.jpeg";
-import jingyiXie from "../assets/Panelists/Jingyi Xie.jpeg";
 import kevinLanzo from "../assets/Panelists/Kevin Lanzo .jpeg";
-import sumaAnand from "../assets/Panelists/Suma Anand.jpeg";
-import morganHough from "../assets/Panelists/Morgan Hough.jpeg";
-import architGupta from "../assets/Panelists/Archit Gupta.jpeg";
+import brianPepin from "../assets/headshots/Brian Pepin_Rune Labs headshot.png";
+import gaojinHuang from "../assets/headshots/Gaojin Huang.png";
+import gregSimpson from "../assets/headshots/Greg Simpson headshot 2026.jpeg";
+import jingyiXie from "../assets/headshots/Jingyi Xie.png";
+import narayanSankaran from "../assets/headshots/Narayan Sankaran-24.10.18-19-VNB16540_cropped.jpg";
+import architGupta from "../assets/headshots/archit.png";
+import keithMurphy from "../assets/headshots/keith murphy.png";
+import matiasSerebrinsky from "../assets/headshots/matias.jpg";
+import michaelSilver from "../assets/headshots/michael_silver_april_2017.jpg";
+import morganHough from "../assets/headshots/morgan hough.png";
+import preeyaKhanna from "../assets/headshots/preeya khanna.jpg";
+import sumaAnand from "../assets/headshots/suma Anand.png";
+import valerieBlack from "../assets/headshots/vblack-headshot.png";
 
 // (Optional) if you want Michael Silver image too, add the file and import it here.
 // import michaelSilver from "../assets/Panelists/Michael Silver.jpeg";
@@ -109,7 +111,7 @@ export const Academic_Workshop_Panelists = [
     title: "UC Berkeley Professor; neuroscience and vision research",
     org: "UC Berkeley",
     tags: ["Neuroscience", "Vision"],
-    img: "", // add image when available
+    img: michaelSilver, // add image when available
     // img: michaelSilver,
   },
 ];
@@ -134,7 +136,7 @@ export const Entrepreneurship_Workshop_Panelists = [
     title: "Entrepreneur and product leader in neurotechnology and digital health",
     org: "",
     tags: ["Neurotech", "Product"],
-    img: "",
+    img: matiasSerebrinsky,
   },
   {
     name: "Suma Anand",

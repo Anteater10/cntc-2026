@@ -8,6 +8,7 @@ import ntBerkeley from "../assets/logos/presented-neurotech-berkeley.png"
 import crux from "../assets/logos/presented-crux-ucla.png"
 import triton from "../assets/logos/presented-triton.png"
 import ntUsc from "../assets/logos/presented-neurotech-usc.png"
+import ntUCSB from "../assets/logos/Neurotech@ucsb.jpg"
 
 import sponsorEmotiv from "../assets/logos/sponsor-emotiv.png"
 import sponsorOpenwater from "../assets/logos/sponsor-openwater.png"
@@ -29,6 +30,7 @@ export const presentedByLogos = [ // no size -> defaults to 23px
   { src: crux, size: "h-20" },
   { src: triton },
   { src: ntUsc, size: "h-18" },
+  { src: ntUCSB, size: "h-40 w-50 object-contain"},
 ]
 
 export const sponsorLogos = [
