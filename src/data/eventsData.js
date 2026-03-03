@@ -1,6 +1,6 @@
 export const schedule = [
   {
-    time: "9:40 AM - 10:00 AM",
+    time: "9:00 AM - 9:40 AM",
     sessions: [
       {
         title: "Keynote Speech by\nDaniel Almeida Filho",
@@ -10,15 +10,27 @@ export const schedule = [
   },
 
   {
-    time: "10:20 AM - 11:00 AM",
+    time: "9:40 AM - 10:00 AM",
     sessions: [
       {
         title: "Sponsor pitch by\nOpenwater",
         loc: "Chevron Auditorium",
       },
+    ],
+  },
+
+  // (No programmed sessions in the provided schedule for 10:00–10:20)
+
+  {
+    time: "10:20 AM - 11:00 AM",
+    sessions: [
       {
         title: "Neuroengineering &\nApplication Panel",
         loc: "Chevron Auditorium",
+      },
+      {
+        title: "Academic Workshop",
+        loc: "Robert/Ida Room",
       },
     ],
   },
@@ -27,19 +39,9 @@ export const schedule = [
     time: "11:00 AM - 1:00 PM",
     sessions: [
       {
-        title: "Academic Workshop",
-        loc: "Robert/Ida Room",
-      },
-      {
         title: "Lunch + Networking",
         loc: "Chevron Auditorium",
       },
-    ],
-  },
-
-  {
-    time: "1:00 PM - 1:40 PM",
-    sessions: [
       {
         title: "Poster Session",
         loc: "Home Room",
@@ -48,7 +50,7 @@ export const schedule = [
   },
 
   {
-    time: "1:40 PM - 2:00 PM",
+    time: "1:00 PM - 1:40 PM",
     sessions: [
       {
         title: "Keynote Speech by\nJosef Parvizi",
@@ -58,7 +60,7 @@ export const schedule = [
   },
 
   {
-    time: "2:00 PM - 2:40 PM",
+    time: "1:40 PM - 2:00 PM",
     sessions: [
       {
         title: "Sponsor pitch by\nCeribell",
@@ -68,7 +70,7 @@ export const schedule = [
   },
 
   {
-    time: "2:40 PM - 5:30 PM",
+    time: "2:00 PM - 2:40 PM",
     sessions: [
       {
         title: "Neuroethics & AI Panel",
@@ -82,17 +84,18 @@ export const schedule = [
   },
 
   {
-    time: "5:30 PM - 5:30 PM",
+    time: "2:40 PM - 5:30 PM",
     sessions: [
       {
         title: "Student Brain-Computer Interface Competition",
         loc: "Chevron Auditorium",
       },
-      {
-        title: "Closing",
-        loc: "Chevron Auditorium",
-      },
     ],
+  },
+
+  {
+    time: "5:30 PM",
+    sessions: [{ title: "Closing", loc: "Chevron Auditorium" }],
   },
 
   {
