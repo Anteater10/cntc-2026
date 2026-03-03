@@ -99,7 +99,7 @@ export const schedule = [
   },
 
   {
-    time: "5:30 PM - 5:30 PM",
+    time: "5:30 PM - 6:30 PM",
     sessions: [
       {
         title: "Networking + Mixer",
