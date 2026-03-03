@@ -1,46 +1,38 @@
 export const schedule = [
   {
-    time: "9:00 AM - 9:40 AM",
+    time: "9:40 AM - 10:00 AM",
     sessions: [
       {
-        title: "Zoom Keynote Speech by\nDaniel Almeido Filho",
+        title: "Keynote Speech by\nDaniel Almeida Filho",
         loc: "Chevron Auditorium",
-      },
-      {
-        title: "Poster Round 1 Setup",
-        loc: "Home Room",
       },
     ],
   },
-
-  // 9:45–10:00 Pitch 1 (excluded per instructions)
 
   {
-    time: "10:00 AM - 10:40 AM",
+    time: "10:20 AM - 11:00 AM",
     sessions: [
       {
-        title: "Neurotech Possibility &\nApplication Panel",
+        title: "Sponsor pitch by\nOpenwater",
         loc: "Chevron Auditorium",
       },
       {
-        title: "Academic Workshop",
-        loc: "Robert/Ida Room",
+        title: "Neuroengineering &\nApplication Panel",
+        loc: "Chevron Auditorium",
       },
     ],
   },
-
-  // 10:45–11:00 Pitch 2 (excluded per instructions)
 
   {
     time: "11:00 AM - 1:00 PM",
     sessions: [
       {
-        title: "Lunch + Networking",
-        loc: "Chevron Auditorium",
+        title: "Academic Workshop",
+        loc: "Robert/Ida Room",
       },
       {
-        title: "Poster Session\n(30 min rotations)",
-        loc: "Home Room",
+        title: "Lunch + Networking",
+        loc: "Chevron Auditorium",
       },
     ],
   },
@@ -49,16 +41,34 @@ export const schedule = [
     time: "1:00 PM - 1:40 PM",
     sessions: [
       {
-        title: "Keynote Speech by Joseph Parvizi",
+        title: "Poster Session",
+        loc: "Home Room",
+      },
+    ],
+  },
+
+  {
+    time: "1:40 PM - 2:00 PM",
+    sessions: [
+      {
+        title: "Keynote Speech by\nJosef Parvizi",
         loc: "Chevron Auditorium",
       },
     ],
   },
 
-  // 1:45–2:00 Pitch 3 (excluded per instructions)
-
   {
     time: "2:00 PM - 2:40 PM",
+    sessions: [
+      {
+        title: "Sponsor pitch by\nCeribell",
+        loc: "Chevron Auditorium",
+      },
+    ],
+  },
+
+  {
+    time: "2:40 PM - 5:30 PM",
     sessions: [
       {
         title: "Neuroethics & AI Panel",
@@ -72,17 +82,26 @@ export const schedule = [
   },
 
   {
-    time: "2:40 PM - 3:30 PM",
+    time: "5:30 PM - 5:30 PM",
     sessions: [
-      { title: "Networking", loc: "Chevron Auditorium" },
+      {
+        title: "Student Brain-Computer Interface Competition",
+        loc: "Chevron Auditorium",
+      },
+      {
+        title: "Closing",
+        loc: "Chevron Auditorium",
+      },
     ],
   },
 
-  // 3:30–5:30 BCI competition (excluded per instructions)
-  // 5:30–6:00 Judging (excluded per instructions)
-
   {
-    time: "6:00 PM - 6:20 PM",
-    sessions: [{ title: "Closing", loc: "Chevron Auditorium" }],
+    time: "5:30 PM - 5:30 PM",
+    sessions: [
+      {
+        title: "Networking + Mixer",
+        loc: "Chevron Auditorium",
+      },
+    ],
   },
 ];
