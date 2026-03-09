@@ -1,16 +1,96 @@
-# React + Vite
+# CNTC 2026 Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern conference website built for **CNTC 2026** using **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This project was designed as a clean, responsive event site featuring core conference pages such as speakers, schedule, sponsors, and general event information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+The site includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- A landing page for conference highlights
+- Speaker and panelist pages
+- Event schedule and program information
+- Sponsor and partner showcases
+- About page and organization details
+- Client-side routing for a smooth multi-page experience
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**
+- **Vite**
+- **React Router**
+- **Tailwind CSS**
+- **lucide-react**
+
+## Features
+
+- Responsive layout across desktop and mobile
+- Reusable component structure
+- Static content managed through organized data files
+- Fast frontend performance with Vite
+- Clean routing for multiple public-facing pages
+
+## Project Structure
+
+```text
+src/
+  components/
+    Navbar.jsx
+  pages/
+    Home.jsx
+    About.jsx
+    Events.jsx
+    Speakers.jsx
+    Sponsors.jsx
+    NotFound.jsx
+  data/
+    homeData.js
+    aboutData.js
+    eventsData.js
+    speakerData.js
+  assets/
+  lib/
+  App.jsx
+  main.jsx
+  index.css
+```
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+This project emphasizes:
+
+- Frontend architecture for a real-world event site
+- Maintainable page and component organization
+- Scalable static content management
+- Polished UI for a public-facing conference experience
+
+## License
+
+This project is for portfolio and educational use unless otherwise specified.
