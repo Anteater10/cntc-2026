@@ -2,6 +2,7 @@ import keystone1 from "../assets/speakers/speaker1.jpg";
 import keystone2 from "../assets/speakers/speaker2.jpg";
 
 // Panelist headshots (from /src/assets/Panelists)
+import Watson from "../assets/headshots/Watson.png";
 import markFedyk from "../assets/Panelists/Mark Fedyk.jpeg";
 import kevinLanzo from "../assets/Panelists/Kevin Lanzo .jpeg";
 import brianPepin from "../assets/headshots/Brian Pepin_Rune Labs headshot.png";
@@ -73,7 +74,7 @@ export const Innovation_Future_Possibilities_Panelists = [
     title:
       "AULI.TECH",
     tags: [],
-    img: "",
+    img: Watson,
   },
 ];
 
@@ -136,7 +137,7 @@ export const Entrepreneurship_Workshop_Panelists = [
   },
   {
     name: "Kevin Lanzo",
-    title: "Industry leader and startup operator in neurotech commercialization",
+    title: "Clinical entrepreneur and venture advisor bridging neuroscience and drug development for psychedelic and psychiatric therapeutics",
     org: "",
     tags: ["Commercialization", "Go-to-market"],
     img: kevinLanzo,
@@ -184,7 +185,7 @@ export const BCI_competition_judges = [
   {
     name: "Preeya Khanna",
     title:
-      "UC Berkeley Bioengineering Professor; neural interfaces for movement rehab",
+      "UC Berkeley EECS Professor; neural interfaces for movement rehab",
     org: "UC Berkeley",
     tags: ["Neural interfaces", "Motor control"],
     img: preeyaKhanna,
