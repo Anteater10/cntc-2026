@@ -19,7 +19,7 @@ import preeyaKhanna from "../assets/headshots/preeya khanna.jpg";
 import sumaAnand from "../assets/headshots/suma Anand.png";
 import valerieBlack from "../assets/headshots/vblack-headshot.png";
 import allenCantwell from "../assets/headshots/0eb7a4cb4cd69e7a23940d4224f81a06.png"
-
+import rose from "../assets/headshots/rose.png";
 
 
 // (Optional) if you want Michael Silver image too, add the file and import it here.
@@ -75,6 +75,14 @@ export const Innovation_Future_Possibilities_Panelists = [
       "AULI.TECH",
     tags: [],
     img: Watson,
+  },
+  {
+    name: "Rose Reeb",
+    title:
+      "COO, Noē Neuro; neuroscience, biotech operations, and venture investing",
+    org: "Noē Neuro",
+    tags: ["Neurotechnology", "Startup operations"],
+    img: rose,
   },
 ];
 
