@@ -19,7 +19,7 @@ import preeyaKhanna from "../assets/headshots/preeya khanna.jpg";
 import sumaAnand from "../assets/headshots/suma Anand.png";
 import valerieBlack from "../assets/headshots/vblack-headshot.png";
 import allenCantwell from "../assets/headshots/0eb7a4cb4cd69e7a23940d4224f81a06.png"
-import rose from "../assets/headshots/rose.png";
+import rose from "../assets/headshots/Reeb_Rose_Headshot.jpg";
 
 
 // (Optional) if you want Michael Silver image too, add the file and import it here.
