@@ -20,8 +20,7 @@ import sumaAnand from "../assets/headshots/suma Anand.png";
 import valerieBlack from "../assets/headshots/vblack-headshot.png";
 import allenCantwell from "../assets/headshots/0eb7a4cb4cd69e7a23940d4224f81a06.png"
 import rose from "../assets/headshots/Reeb_Rose_Headshot.jpg"
-
-
+import brit from "../assets/headshots/IMG_1220.jpg"
 // (Optional) if you want Michael Silver image too, add the file and import it here.
 // import michaelSilver from "../assets/Panelists/Michael Silver.jpeg";
 
@@ -116,7 +115,7 @@ export const Academic_Workshop_Panelists = [
     title: "Ph.D. candidate at UC Berkeley; Biotech@Berkeley member",
     org: "UC Berkeley",
     tags: ["Circadian rhythms", "Infectious disease", "Neuroscience", "Biotech mentorship"],
-    img: "",
+    img: brit,
   },
   {
     name: "Jingyi Xie",
