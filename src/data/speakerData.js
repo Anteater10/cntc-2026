@@ -15,7 +15,7 @@ import keithMurphy from "../assets/headshots/keith murphy.png";
 import matiasSerebrinsky from "../assets/headshots/matias.jpg";
 import michaelSilver from "../assets/headshots/michael_silver_april_2017.jpg";
 import morganHough from "../assets/headshots/morgan hough.png";
-import preeyaKhanna from "../assets/headshots/preeya khanna.jpg";
+//import preeyaKhanna from "../assets/headshots/preeya khanna.jpg";
 import sumaAnand from "../assets/headshots/suma Anand.png";
 import valerieBlack from "../assets/headshots/vblack-headshot.png";
 import allenCantwell from "../assets/headshots/0eb7a4cb4cd69e7a23940d4224f81a06.png"
@@ -61,14 +61,14 @@ export const Innovation_Future_Possibilities_Panelists = [
     tags: ["Focused ultrasound", "Neuromodulation"],
     img: keithMurphy,
   },
-  {
-    name: "Preeya Khanna",
-    title:
-      "UC Berkeley Bioengineering Professor; neural interfaces for movement rehab",
-    org: "UC Berkeley",
-    tags: ["Neural interfaces", "Neurorehabilitation"],
-    img: preeyaKhanna,
-  },
+  // {
+  //   name: "Preeya Khanna",
+  //   title:
+  //     "UC Berkeley Bioengineering Professor; neural interfaces for movement rehab",
+  //   org: "UC Berkeley",
+  //   tags: ["Neural interfaces", "Neurorehabilitation"],
+  //   img: preeyaKhanna,
+  // },
   {
     name: "Rose Reeb",
     title:
@@ -112,11 +112,11 @@ export const Innovation_Constraints_Panelists = [
 
 export const Academic_Workshop_Panelists = [
   {
-    name: "Gaojian Huang",
-    title: "SJSU ISE Professor; BAT Lab Director; human-AI and assistive tech",
-    org: "San José State University",
-    tags: ["Human-AI interaction", "Accessibility"],
-    img: gaojinHuang,
+    name: "Brianna Parrington",
+    title: "Ph.D. candidate at UC Berkeley; Biotech@Berkeley member",
+    org: "UC Berkeley",
+    tags: ["Circadian rhythms", "Infectious disease", "Neuroscience", "Biotech mentorship"],
+    img: "",
   },
   {
     name: "Jingyi Xie",
@@ -190,14 +190,14 @@ export const BCI_competition_judges = [
     tags: ["BCI", "Neuroengineering"],
     img: morganHough,
   },
-  {
-    name: "Preeya Khanna",
-    title:
-      "UC Berkeley EECS Professor; neural interfaces for movement rehab",
-    org: "UC Berkeley",
-    tags: ["Neural interfaces", "Motor control"],
-    img: preeyaKhanna,
-  },
+  // {
+  //   name: "Preeya Khanna",
+  //   title:
+  //     "UC Berkeley EECS Professor; neural interfaces for movement rehab",
+  //   org: "UC Berkeley",
+  //   tags: ["Neural interfaces", "Motor control"],
+  //   img: preeyaKhanna,
+  // },
   {
     name: "Keith Murphy",
     title: "CTO & Co-founder, Attune Neurosciences; ultrasound neuromodulation",
